@@ -1,550 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project One</title>
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css"> <!-- This is for wow -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- This is for icons on the map layover -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700"
-        rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project One</title>
+        <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+        <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css"> <!-- This is for wow -->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- This is for icons on the map layover -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700"
+              rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
 
-<body>
-    <div id="preloader"></div>
-    <!--Start the header-->
-    <header id="header">
-        <nav id="navbar" class="navbar navbar-default navbar-expand-lg">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button id="navBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+    <body>
+        <div id="preloader"></div>
+        <!--Start the header-->
+        <header id="header">
+            <nav id="navbar" class="navbar navbar-default navbar-expand-lg">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="navBtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img id="brand-img" alt="Brand" class="logo-dark" src="assets/imgs/logo/logo-dark(1).png">
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="homeLink" class="main-links" href="#home">HOME</a></li>
+                        <li><a class="main-links" href="#about">ABOUT</a></li>
+                        <li><a class="main-links" href="#timeline">TIMELINE</a></li>
+                        <li><a class="main-links" href="#services">SERVICES</a></li>
+                        <li><a class="main-links" href="#contact">CONTACT</a></li>
+                        <li><a class="main-links" href="#sayHello">SAY HELLO</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </header>
+        <!--End the header-->
+        <!--Start the main page-->
+        <div id="loader"></div>
+        <div id="home" class="home">
+            <h1 class="addTextByDelay" data-delay="600" data-text="stack # web developer">
+                <span class="addTextByDelay" style="color: red;" data-text="full"></span>
+            </h1>
+            <div class="container-fluid">
+                <div id="sNav" class="portfolio-filter s-nav">
+                    <a id="all" class="filter-button  active-s-nav" data-filter="*">all</a>
+                    <a class="filter-button" data-filter=".html">HTML&CSS</a>
+                    <a class="filter-button" data-filter=".javascript">JS</a>
+                    <a class="filter-button" data-filter=".php">PHP</a>
+                </div>
+                <div id="gallary">
+                    <div id="html" class="col-lg-4 col-sm-6 col-xs-12 filter html wow slideInUp" data-wow-delay="200ms">
+                        <div class="mypic">
+                            <img src="assets/imgs/main/html.jpg" alt="html">
+                            <a href="https://www.youtube.com/watch?v=6QAELgirvjs" data-fancybox class="item-link">
+                                <div class="overlay">
+                                    <img src="assets/pings/vedio.png" alt="video">
+                                    <p>© Copyright; Elzero Web School</p>
+                                    <h3>Introduction Video</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="javascript"
+                         class="first col-lg-4 col-sm-6 col-xs-12 filter javascript design wow slideInUp">
+                        <div class="mypic">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=GM6dQBmc-Xg">
+                                <!--was data-fancybox="gallery"-->
+                                <img src="assets/imgs/main/js.jpg" alt="js">
+                                <div class="overlay ">
+                                    <img src="assets/pings/vedio.png" alt="video">
+                                    <p>© Copyright; Elzero Web School</p>
+                                    <h3>Introduction Video</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="php" class="col-lg-4 col-sm-6 col-xs-12 filter php wow slideInUp">
+                        <div class="mypic">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=-u9_T_CLZHY">
+                                <!--was data-fancybox="images"-->
+                                <img src="assets/imgs/main/php.jpg" alt="php">
+                                <div class="overlay ">
+                                    <img src="assets/pings/vedio.png" alt="vidoe">
+                                    <p>© Copyright; Elzero Web School</p>
+                                    <h3>Introduction Video</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="css" class="col-lg-4 col-sm-6 col-xs-12 filter html wow slideInUp">
+                        <div class="mypic">
+                            <img src="assets/imgs/main/css.jpg" alt="css">
+                            <a data-fancybox="gallery-html" href="assets/imgs/f-imgs/html/f-html1.png"
+                               class="item-link">
+                                <div class="overlay video">
+                                    <img src="assets/pings/image.png" alt="image">
+                                    <p>© Copyright; Elzero Web School</p>
+                                    <h3>Gallery</h3>
+                                </div>
+                                <a style="display: none;" data-fancybox="gallery-html"
+                                   href="assets/imgs/f-imgs/html/f-html2.jpg">
+                                    <img src="assets/imgs/f-imgs/html/f-html2.jpg" alt="css">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-html"
+                                   href="assets/imgs/f-imgs/html/f-html3.jpg">
+                                    <img src="assets/imgs/f-imgs/html/f-html3.jpg" alt="sass">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-html"
+                                   href="assets/imgs/f-imgs/html/f-html4.jpg">
+                                    <img src="assets/imgs/f-imgs/html/f-html4.jpg" alt="bootstrap">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-html"
+                                   href="assets/imgs/f-imgs/html/f-html5.jpg">
+                                    <img src="assets/imgs/f-imgs/html/f-html5.jpg" alt="bootstrap">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-html"
+                                   href="assets/imgs/f-imgs/html/f-html6.jpg">
+                                    <img src="assets/imgs/f-imgs/html/f-html6.jpg" alt="bootstrap">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-html"
+                                   href="assets/imgs/f-imgs/html/f-html7.png">
+                                    <img src="assets/imgs/f-imgs/html/f-html7.png" alt="bootstrap">
+                                </a>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="jquery" class="col-lg-4 col-sm-6 col-xs-12 filter javascript wow slideInUp"
+                         data-wow-delay="200ms">
+                        <div class="mypic">
+                            <img src="assets/imgs/main/jquery.jpg" alt="jquery">
+                            <a data-fancybox="gallery-js" href="assets/imgs/f-imgs/js/f-js1.png" class="item-link">
+                                <div class="overlay">
+                                    <img src="assets/pings/image.png" alt="">
+                                    <p>© Copyright; Elzero Web School</p>
+                                    <h3>Gallery</h3>
+                                </div>
+                                <a style="display: none;" data-fancybox="gallery-js"
+                                   href="assets/imgs/f-imgs/js/f-js2.png">
+                                    <img src="assets/imgs/f-imgs/js/f-js2.png" alt="jquery">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-js"
+                                   href="assets/imgs/f-imgs/js/f-js3.jpg">
+                                    <img src="assets/imgs/f-imgs/js/f-js3.jpg" alt="hoba">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-js"
+                                   href="assets/imgs/f-imgs/js/f-js4.jpg">
+                                    <img src="assets/imgs/f-imgs/js/f-js4.jpg" alt="hoba">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-js"
+                                   href="assets/imgs/f-imgs/js/f-js5.jpg">
+                                    <img src="assets/imgs/f-imgs/js/f-js5.jpg" alt="hoba">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-js"
+                                   href="assets/imgs/f-imgs/js/f-js6.jpg">
+                                    <img src="assets/imgs/f-imgs/js/f-js6.jpg" alt="hoba">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-js"
+                                   href="assets/imgs/f-imgs/js/f-js7.jpg">
+                                    <img src="assets/imgs/f-imgs/js/f-js7.jpg" alt="hoba">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-js"
+                                   href="assets/imgs/f-imgs/js/f-js8.jpg">
+                                    <img src="assets/imgs/f-imgs/js/f-js8.jpg" alt="hoba">
+                                </a>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="laravel" class="col-lg-4 col-sm-6 col-xs-12 filter php wow slideInUp"
+                         data-wow-delay="200ms">
+                        <div class="mypic">
+                            <img src="assets/imgs/main/laravel.png" alt="laravel">
+                            <a data-fancybox="gallery-php" href="assets/imgs/f-imgs/php/f-php1.jpg" class="item-link">
+                                <div class="overlay">
+                                    <img src="assets/pings/image.png" alt="">
+                                    <p>© Copyright; Elzero Web School</p>
+                                    <h3>Gallery</h3>
+                                </div>
+                                <a style="display: none;" data-fancybox="gallery-php"
+                                   href="assets/imgs/f-imgs/php/f-php2.jpg">
+                                    <img src="assets/imgs/f-imgs/php/f-php2.jpg" alt="laravel">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-php"
+                                   href="assets/imgs/f-imgs/php/f-php3.jpg">
+                                    <img src="assets/imgs/f-imgs/php/f-php3.jpg" alt="laravel">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-php"
+                                   href="assets/imgs/f-imgs/php/f-php4.png">
+                                    <img src="assets/imgs/f-imgs/php/f-php4.png" alt="laravel">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-php"
+                                   href="assets/imgs/f-imgs/php/f-php5.jpg">
+                                    <img src="assets/imgs/f-imgs/php/f-php5.jpg" alt="laravel">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-php"
+                                   href="assets/imgs/f-imgs/php/f-php6.jpg">
+                                    <img src="assets/imgs/f-imgs/php/f-php6.jpg" alt="laravel">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-php"
+                                   href="assets/imgs/f-imgs/php/f-php7.jpg">
+                                    <img src="assets/imgs/f-imgs/php/f-php7.jpg" alt="laravel">
+                                </a>
+                                <a style="display: none;" data-fancybox="gallery-php"
+                                   href="assets/imgs/f-imgs/php/f-php8.jpg">
+                                    <img src="assets/imgs/f-imgs/php/f-php8.jpg" alt="laravel">
+                                </a>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="sass" class="col-lg-4 col-sm-6 col-xs-12 filter html wow slideInUp">
+                        <div class="mypic">
+                            <a target="_blank" href="https://sass-lang.com/documentation">
+                                <img src="assets/imgs/main/sass.jpg" alt="sass">
+                                <div class="overlay">
+                                    <img src="assets/pings/page.png" alt="">
+                                    <p>© Copyright; Elzero Web School</p>
+                                    <h3>Read About</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="bootstrap" class="col-lg-4 col-sm-6 col-xs-12 filter javascript wow slideInUp"
+                         data-wow-delay="400ms">
+                        <div class="mypic">
+                            <img src="assets/imgs/main/bootstrap.jpg" alt="bootstrap">
+                            <a class="item-link" target="_blank"
+                               href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">
+                                <div class="overlay">
+                                    <img src="assets/pings/page.png" alt="">
+                                    <p>© Copyright; Elzero Web School</p>
+                                    <h3>Read About</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="mysql" class="col-lg-4 col-sm-6 col-xs-12 filter php wow slideInUp" data-wow-delay="400ms">
+                        <div class="mypic">
+                            <img src="assets/imgs/main/mysql.jpg" alt="mysql">
+                            <a target="_blank" href="https://dev.mysql.com/doc/" class="item-link">
+                                <div class="overlay">
+                                    <img src="assets/pings/page.png" alt="">
+                                    <p>© Copyright; Elzero Web School</p>
+                                    <h3>Read About</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="col-xs-12">
+                    <a href="">Facebook</a>
+                    <a href="">Instagram</a>
+                    <a href="">Linkedin</a>
+                    <a href="">Twitter</a>
+                    <a href="">YouTube</a>
+                </div>
+                <p class="col-xs-12">© Copyright; Elzero Web School</p>
+                <button id="up" onclick="goTop()" class="up">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="34" fill="black" class="bi bi-arrow-up"
+                         viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                    </svg>
                 </button>
-                <img id="brand-img" alt="Brand" class="logo-dark" src="assets/imgs/logo/logo-dark(1).png">
+            </footer>
+        </div>
+        <!--End the main page-->
+        <!--Start the nav container-->
+        <div id="nav-container">
+            <div id="nav-left" class="nav-left">
+                <span id="closeBtn" class="closex">x</span>
+                <img alt="Brand" class="logo-light" src="assets/imgs/logo/logo-light.png">
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a id="homeLink" class="main-links" href="#home">HOME</a></li>
-                    <li><a class="main-links" href="#about">ABOUT</a></li>
-                    <li><a class="main-links" href="#timeline">TIMELINE</a></li>
-                    <li><a class="main-links" href="#services">SERVICES</a></li>
-                    <li><a class="main-links" href="#contact">CONTACT</a></li>
-                    <li><a class="main-links" href="#sayHello">SAY HELLO</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </nav>
-    </header>
-    <!--End the header-->
-    <!--Start the main page-->
-    <div id="loader"></div>
-    <div id="home" class="home">
-        <h1 class="addTextByDelay" data-delay="600" data-text="stack # web developer">
-            <span class="addTextByDelay" style="color: red;" data-text="full"></span>
-        </h1>
-        <div class="container-fluid">
-            <div id="sNav" class="portfolio-filter s-nav">
-                <a id="all" class="filter-button  active-s-nav" data-filter="*">all</a>
-                <a class="filter-button" data-filter=".html">HTML&CSS</a>
-                <a class="filter-button" data-filter=".javascript">JS</a>
-                <a class="filter-button" data-filter=".php">PHP</a>
-            </div>
-
-            <div id="gallary">
-
-                <div id="html" class="col-lg-4 col-sm-6 col-xs-12 filter html wow slideInUp" data-wow-delay="200ms">
-                    <div class="mypic">
-                        <img src="assets/imgs/main/html.jpg" alt="html">
-                        <a href="https://www.youtube.com/watch?v=6QAELgirvjs" data-fancybox class="item-link">
-                            <div class="overlay">
-                                <img src="assets/pings/vedio.png" alt="video">
-                                <p>© Copyright; Elzero Web School</p>
-                                <h3>Introduction Video</h3>
+            <div class="main">
+                <section id="about" class="section section-about">
+                    <h2> We are creative digital<br> design agency </h2>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" class="active" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="assets/imgs/big-slider/1.jpg" alt="Los Angeles" style="width:100%;">
+                                <div class="carousel-caption"></div>
                             </div>
+                            <div class="item">
+                                <img src="assets/imgs/big-slider/2.jpg" alt="Los Angeles" style="width:100%;">
+                                <div class="carousel-caption"></div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
                         </a>
                     </div>
-                </div>
-
-                <div id="javascript" class="first col-lg-4 col-sm-6 col-xs-12 filter javascript design wow slideInUp">
-                    <div class="mypic">
-                        <a data-fancybox href="https://www.youtube.com/watch?v=GM6dQBmc-Xg">
-                            <!--was data-fancybox="gallery"-->
-                            <img src="assets/imgs/main/js.jpg" alt="js">
-                            <div class="overlay ">
-                                <img src="assets/pings/vedio.png" alt="video">
-                                <p>© Copyright; Elzero Web School</p>
-                                <h3>Introduction Video</h3>
-                            </div>
-                        </a>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugiat culpa quibusdam
+                            voluptates eum repellendus nostrum laborum, ullam iure sunt voluptatem minima aut similique
+                            quia tenetur vel exercitationem est facere.</p>
+                        <p style="margin-right: 0;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugiat
+                            culpa quibusdam voluptates eum repellendus nostrum laborum, ullam iure sunt voluptatem
+                            minima aut similique quia tenetur vel exercitationem est facere.</p>
                     </div>
-                </div>
-
-                <div id="php" class="col-lg-4 col-sm-6 col-xs-12 filter php wow slideInUp">
-                    <div class="mypic">
-                        <a data-fancybox href="https://www.youtube.com/watch?v=-u9_T_CLZHY">
-                            <!--was data-fancybox="images"-->
-                            <img src="assets/imgs/main/php.jpg" alt="php">
-                            <div class="overlay ">
-                                <img src="assets/pings/vedio.png" alt="vidoe">
-                                <p>© Copyright; Elzero Web School</p>
-                                <h3>Introduction Video</h3>
-                            </div>
-                        </a>
-
+                </section>
+                <section id="timeline" class="section section-timeline">
+                    <h3>Timeline</h3>
+                    <div class="timeline">
+                        <div>14 JULY, 2019</div>
+                        <h5>VOLUPTATUM PERSPICIATIS LIBERO NAM LAUDANTIUM</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, possimus? Unde aperiam
+                            excepturi, sequi incidunt nesciunt, impedit repudiandae, architecto sit!</p>
                     </div>
-                </div>
-
-                <div id="css" class="col-lg-4 col-sm-6 col-xs-12 filter html wow slideInUp">
-                    <div class="mypic">
-                        <img src="assets/imgs/main/css.jpg" alt="css">
-
-                        <a data-fancybox="gallery-html" href="assets/imgs/f-imgs/html/f-html1.png" class="item-link">
-                            <div class="overlay video">
-                                <img src="assets/pings/image.png" alt="image">
-                                <p>© Copyright; Elzero Web School</p>
-                                <h3>Gallery</h3>
-                            </div>
-                            <a style="display: none;" data-fancybox="gallery-html"
-                                href="assets/imgs/f-imgs/html/f-html2.jpg">
-                                <img src="assets/imgs/f-imgs/html/f-html2.jpg" alt="css">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-html"
-                                href="assets/imgs/f-imgs/html/f-html3.jpg">
-                                <img src="assets/imgs/f-imgs/html/f-html3.jpg" alt="sass">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-html"
-                                href="assets/imgs/f-imgs/html/f-html4.jpg">
-                                <img src="assets/imgs/f-imgs/html/f-html4.jpg" alt="bootstrap">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-html"
-                                href="assets/imgs/f-imgs/html/f-html5.jpg">
-                                <img src="assets/imgs/f-imgs/html/f-html5.jpg" alt="bootstrap">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-html"
-                                href="assets/imgs/f-imgs/html/f-html6.jpg">
-                                <img src="assets/imgs/f-imgs/html/f-html6.jpg" alt="bootstrap">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-html"
-                                href="assets/imgs/f-imgs/html/f-html7.png">
-                                <img src="assets/imgs/f-imgs/html/f-html7.png" alt="bootstrap">
-                            </a>
-
-                        </a>
+                    <div class="timeline">
+                        <div>14 JULY, 2019</div>
+                        <h5>VOLUPTATUM PERSPICIATIS LIBERO NAM LAUDANTIUM</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, possimus? Unde aperiam
+                            excepturi, sequi incidunt nesciunt, impedit repudiandae, architecto sit!</p>
                     </div>
-                </div>
-
-                <div id="jquery" class="col-lg-4 col-sm-6 col-xs-12 filter javascript wow slideInUp"
-                    data-wow-delay="200ms">
-                    <div class="mypic">
-                        <img src="assets/imgs/main/jquery.jpg" alt="jquery">
-
-                        <a data-fancybox="gallery-js" href="assets/imgs/f-imgs/js/f-js1.png" class="item-link">
-
-                            <div class="overlay">
-                                <img src="assets/pings/image.png" alt="">
-                                <p>© Copyright; Elzero Web School</p>
-                                <h3>Gallery</h3>
-                            </div>
-
-                            <a style="display: none;" data-fancybox="gallery-js" href="assets/imgs/f-imgs/js/f-js2.png">
-                                <img src="assets/imgs/f-imgs/js/f-js2.png" alt="jquery">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-js" href="assets/imgs/f-imgs/js/f-js3.jpg">
-                                <img src="assets/imgs/f-imgs/js/f-js3.jpg" alt="hoba">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-js" href="assets/imgs/f-imgs/js/f-js4.jpg">
-                                <img src="assets/imgs/f-imgs/js/f-js4.jpg" alt="hoba">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-js" href="assets/imgs/f-imgs/js/f-js5.jpg">
-                                <img src="assets/imgs/f-imgs/js/f-js5.jpg" alt="hoba">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-js" href="assets/imgs/f-imgs/js/f-js6.jpg">
-                                <img src="assets/imgs/f-imgs/js/f-js6.jpg" alt="hoba">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-js" href="assets/imgs/f-imgs/js/f-js7.jpg">
-                                <img src="assets/imgs/f-imgs/js/f-js7.jpg" alt="hoba">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-js" href="assets/imgs/f-imgs/js/f-js8.jpg">
-                                <img src="assets/imgs/f-imgs/js/f-js8.jpg" alt="hoba">
-                            </a>
-
-                        </a>
+                    <div class="timeline">
+                        <div>14 JULY, 2019</div>
+                        <h5>VOLUPTATUM PERSPICIATIS LIBERO NAM LAUDANTIUM</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, possimus? Unde aperiam
+                            excepturi, sequi incidunt nesciunt, impedit repudiandae, architecto sit!</p>
                     </div>
-                </div>
-
-                <div id="laravel" class="col-lg-4 col-sm-6 col-xs-12 filter php wow slideInUp" data-wow-delay="200ms">
-                    <div class="mypic">
-                        <img src="assets/imgs/main/laravel.png" alt="laravel">
-
-                        <a data-fancybox="gallery-php" href="assets/imgs/f-imgs/php/f-php1.jpg" class="item-link">
-
-                            <div class="overlay">
-                                <img src="assets/pings/image.png" alt="">
-                                <p>© Copyright; Elzero Web School</p>
-                                <h3>Gallery</h3>
+                </section>
+                <section id="services" class="section section-services">
+                    <h3>Services</h3>
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12" style="margin: 10px 0;">
+                            <div class="branding">
+                                <img src="assets/imgs/services/1.jpg" alt="branding">
+                                <div>
+                                    <h5>BRANDING</h5>
+                                    <ul>
+                                        <li>Voluptatum odit</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Porro dolore</li>
+                                    </ul>
+                                </div>
                             </div>
-
-                            <a style="display: none;" data-fancybox="gallery-php"
-                                href="assets/imgs/f-imgs/php/f-php2.jpg">
-                                <img src="assets/imgs/f-imgs/php/f-php2.jpg" alt="laravel">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-php"
-                                href="assets/imgs/f-imgs/php/f-php3.jpg">
-                                <img src="assets/imgs/f-imgs/php/f-php3.jpg" alt="laravel">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-php"
-                                href="assets/imgs/f-imgs/php/f-php4.png">
-                                <img src="assets/imgs/f-imgs/php/f-php4.png" alt="laravel">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-php"
-                                href="assets/imgs/f-imgs/php/f-php5.jpg">
-                                <img src="assets/imgs/f-imgs/php/f-php5.jpg" alt="laravel">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-php"
-                                href="assets/imgs/f-imgs/php/f-php6.jpg">
-                                <img src="assets/imgs/f-imgs/php/f-php6.jpg" alt="laravel">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-php"
-                                href="assets/imgs/f-imgs/php/f-php7.jpg">
-                                <img src="assets/imgs/f-imgs/php/f-php7.jpg" alt="laravel">
-                            </a>
-
-                            <a style="display: none;" data-fancybox="gallery-php"
-                                href="assets/imgs/f-imgs/php/f-php8.jpg">
-                                <img src="assets/imgs/f-imgs/php/f-php8.jpg" alt="laravel">
-                            </a>
-
-                        </a>
-                    </div>
-                </div>
-
-                <div id="sass" class="col-lg-4 col-sm-6 col-xs-12 filter html wow slideInUp">
-                    <div class="mypic">
-                        <a target="_blank" href="https://sass-lang.com/documentation">
-                            <img src="assets/imgs/main/sass.jpg" alt="sass">
-                            <div class="overlay">
-                                <img src="assets/pings/page.png" alt="">
-                                <p>© Copyright; Elzero Web School</p>
-                                <h3>Read About</h3>
+                        </div>
+                        <div class="col-sm-6 col-xs-12" style="margin: 10px 0;">
+                            <div class="photography">
+                                <img src="assets/imgs/services/2.jpg" alt="photography">
+                                <div>
+                                    <h5>PHOTOGRAPHY</h5>
+                                    <ul>
+                                        <li>Voluptatum odit</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Porro dolore</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                </div>
-
-                <div id="bootstrap" class="col-lg-4 col-sm-6 col-xs-12 filter javascript wow slideInUp"
-                    data-wow-delay="400ms">
-                    <div class="mypic">
-                        <img src="assets/imgs/main/bootstrap.jpg" alt="bootstrap">
-                        <a class="item-link" target="_blank"
-                            href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">
-                            <div class="overlay">
-                                <img src="assets/pings/page.png" alt="">
-                                <p>© Copyright; Elzero Web School</p>
-                                <h3>Read About</h3>
+                    <div class="container-slider">
+                        <div class="slider">
+                            <div class="brandat">
+                                <img src="assets/imgs/small-slider/brand1.png" alt="brand1">
                             </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="mysql" class="col-lg-4 col-sm-6 col-xs-12 filter php wow slideInUp" data-wow-delay="400ms">
-                    <div class="mypic">
-                        <img src="assets/imgs/main/mysql.jpg" alt="mysql">
-                        <a target="_blank" href="https://dev.mysql.com/doc/" class="item-link">
-                            <div class="overlay">
-                                <img src="assets/pings/page.png" alt="">
-                                <p>© Copyright; Elzero Web School</p>
-                                <h3>Read About</h3>
+                            <div class="brandat">
+                                <img src="assets/imgs/small-slider/brand2.png" alt="brand2">
                             </div>
-                        </a>
+                            <div class="brandat">
+                                <img src="assets/imgs/small-slider/brand3.png" alt="brand3">
+                            </div>
+                            <div class="brandat">
+                                <img src="assets/imgs/small-slider/brand4.png" alt="brand4">
+                            </div>
+                            <div class="brandat">
+                                <img src="assets/imgs/small-slider/brand5.png" alt="brand5">
+                            </div>
+                            <div class="brandat">
+                                <img src="assets/imgs/small-slider/brand6.png" alt="brand6">
+                            </div>
+                            <div class="brandat">
+                                <img src="assets/imgs/small-slider/brand7.png" alt="brand7">
+                            </div>
+                            <div class="brandat">
+                                <img src="assets/imgs/small-slider/brand8.png" alt="brand8">
+                            </div>
+                            <div class="brandat">
+                                <img src="assets/imgs/small-slider/brand9.png" alt="brand9">
+                            </div>
+                            <div class="brandat">
+                                <img src="assets/imgs/small-slider/brand10.png" alt="brand10">
+                            </div>
+                        </div>
                     </div>
-                </div>
-
+                </section>
+                <section id="contact" class="section section-contact">
+                    <h3>Get In Touch</h3>
+                    <div class="map">
+                        <span class="toggle-map">SHOW MAP</span>
+                        <span class="toggle-map" style="display: none;">SHOW INFO</span>
+                        <div id="googleMap"></div>
+                        <div class="map-overlay">
+                            <div class="map-nav row">
+                                <div class="col-xs-12">
+                                    <i class="fa fa-phone"></i>
+                                    <span>+2 012 735 24 801</span>
+                                </div>
+                                <div class="col-xs-12">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>ALEXANDRIA, EG</span>
+                                </div>
+                                <div class="col-xs-12">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span id="email">salah.eldeen.mail@gmail.com</span>
+                                    <a onclick="copyTheMail()" class="btn btn-outline-success pull-right"> Copy Mail
+                                    </a>
+                                    <p id="copyMailMsg" class="pull-right">Mail has been copied</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="map-social col-xs-12">
+                                    <a target="_blank" href="https://www.facebook.com/">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a target="_blank" href="https://www.instagram.com/?hl=en">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                    <a target="_blank" href="https://www.linkedin.com/">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                    <a target="_blank" href="https://twitter.com/">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="sayHello" class="section say-hello">
+                    <h3>Say Hello</h3>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <input type="text" name="name" placeholder="Name:">
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="text" name="email" placeholder="Email:">
+                        </div>
+                        <div class="col-xs-12">
+                            <textarea name="message" placeholder="Message..." rows="6"></textarea>
+                        </div>
+                        <div class="col-xs-12">
+                            <button type="submit">Send</button>
+                        </div>
+                        <div class="aside-footer col-xs-12">
+                            <p>© Copyright; Elzero Web School</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-        <footer>
-            <div class="col-xs-12">
-                <a href="">Facebook</a>
-                <a href="">Instagram</a>
-                <a href="">Linkedin</a>
-                <a href="">Twitter</a>
-                <a href="">YouTube</a>
-            </div>
-            <p class="col-xs-12">© Copyright; Elzero Web School</p>
-            <button id="up" onclick="goTop()" class="up">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="34" fill="black" class="bi bi-arrow-up"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
-                </svg>
-            </button>
-        </footer>
-    </div>
-    <!--End the main page-->
-    <!--Start the nav container-->
-    <div id="nav-container">
-        <div id="nav-left" class="nav-left">
-            <span id="closeBtn" class="closex">x</span>
-            <img alt="Brand" class="logo-light" src="assets/imgs/logo/logo-light.png">
-        </div>
-        <div class="main">
-            <section id="about" class="section section-about">
-                <h2>
-                    We are creative digital<br> design agency
-                </h2>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" class="active" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="assets/imgs/big-slider/1.jpg" alt="Los Angeles" style="width:100%;">
-                            <div class="carousel-caption"></div>
-                        </div>
-
-                        <div class="item">
-                            <img src="assets/imgs/big-slider/2.jpg" alt="Los Angeles" style="width:100%;">
-                            <div class="carousel-caption"></div>
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugiat culpa quibusdam voluptates
-                        eum repellendus nostrum laborum, ullam iure sunt voluptatem minima aut similique quia tenetur
-                        vel exercitationem est facere.</p>
-                    <p style="margin-right: 0;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugiat
-                        culpa quibusdam voluptates eum repellendus nostrum laborum, ullam iure sunt voluptatem minima
-                        aut similique quia tenetur vel exercitationem est facere.</p>
-                </div>
-            </section>
-            <section id="timeline" class="section section-timeline">
-                <h3>Timeline</h3>
-                <div class="timeline">
-                    <div>14 JULY, 2019</div>
-                    <h5>VOLUPTATUM PERSPICIATIS LIBERO NAM LAUDANTIUM</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, possimus? Unde aperiam excepturi,
-                        sequi incidunt nesciunt, impedit repudiandae, architecto sit!</p>
-                </div>
-                <div class="timeline">
-                    <div>14 JULY, 2019</div>
-                    <h5>VOLUPTATUM PERSPICIATIS LIBERO NAM LAUDANTIUM</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, possimus? Unde aperiam excepturi,
-                        sequi incidunt nesciunt, impedit repudiandae, architecto sit!</p>
-                </div>
-                <div class="timeline">
-                    <div>14 JULY, 2019</div>
-                    <h5>VOLUPTATUM PERSPICIATIS LIBERO NAM LAUDANTIUM</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, possimus? Unde aperiam excepturi,
-                        sequi incidunt nesciunt, impedit repudiandae, architecto sit!</p>
-                </div>
-            </section>
-            <section id="services" class="section section-services">
-                <h3>Services</h3>
-                <div class="row">
-                    <div class="col-sm-6 col-xs-12" style="margin: 10px 0;">
-                        <div class="branding">
-                            <img src="assets/imgs/services/1.jpg" alt="branding">
-                            <div>
-                                <h5>BRANDING</h5>
-                                <ul>
-                                    <li>Voluptatum odit</li>
-                                    <li>Consectetur adipisicing</li>
-                                    <li>Porro dolore</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-xs-12" style="margin: 10px 0;">
-                        <div class="photography">
-                            <img src="assets/imgs/services/2.jpg" alt="photography">
-                            <div>
-                                <h5>PHOTOGRAPHY</h5>
-                                <ul>
-                                    <li>Voluptatum odit</li>
-                                    <li>Consectetur adipisicing</li>
-                                    <li>Porro dolore</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-slider">
-                    <div class="slider">
-                        <div class="brandat">
-                            <img src="assets/imgs/small-slider/brand1.png" alt="brand1">
-                        </div>
-                        <div class="brandat">
-                            <img src="assets/imgs/small-slider/brand2.png" alt="brand2">
-                        </div>
-                        <div class="brandat">
-                            <img src="assets/imgs/small-slider/brand3.png" alt="brand3">
-                        </div>
-                        <div class="brandat">
-                            <img src="assets/imgs/small-slider/brand4.png" alt="brand4">
-                        </div>
-                        <div class="brandat">
-                            <img src="assets/imgs/small-slider/brand5.png" alt="brand5">
-                        </div>
-                        <div class="brandat">
-                            <img src="assets/imgs/small-slider/brand6.png" alt="brand6">
-                        </div>
-                        <div class="brandat">
-                            <img src="assets/imgs/small-slider/brand7.png" alt="brand7">
-                        </div>
-                        <div class="brandat">
-                            <img src="assets/imgs/small-slider/brand8.png" alt="brand8">
-                        </div>
-                        <div class="brandat">
-                            <img src="assets/imgs/small-slider/brand9.png" alt="brand9">
-                        </div>
-                        <div class="brandat">
-                            <img src="assets/imgs/small-slider/brand10.png" alt="brand10">
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-            <section id="contact" class="section section-contact">
-                <h3>Get In Touch</h3>
-                <div class="map">
-                    <span class="toggle-map">SHOW MAP</span>
-                    <span class="toggle-map" style="display: none;">SHOW INFO</span>
-                    <div id="googleMap"></div>
-                    <div class="map-overlay">
-
-                        <div class="map-nav row">
-                            <div class="col-xs-12">
-                                <i class="fa fa-phone"></i>
-                                <span>+2 012 735 24 801</span>
-                            </div>
-                            <div class="col-xs-12">
-                                <i class="fa fa-map-marker"></i>
-                                <span>ALEXANDRIA, EG</span>
-                            </div>
-                            <div class="col-xs-12">
-                                <i class="fa fa-envelope-o"></i>
-                                <span id="email">salah.eldeen.mail@gmail.com</span>
-
-                                <a onclick="copyTheMail()" class="btn btn-outline-success pull-right">
-                                    Copy Mail
-                                </a>
-                                <p id="copyMailMsg" class="pull-right">Mail has been copied</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="map-social col-xs-12">
-                                <a target="_blank" href="https://www.facebook.com/">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a target="_blank" href="https://www.instagram.com/?hl=en">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                                <a target="_blank" href="https://www.linkedin.com/">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a target="_blank" href="https://twitter.com/">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-            <section id="sayHello" class="section say-hello">
-                <h3>Say Hello</h3>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <input type="text" name="name" placeholder="Name:">
-                    </div>
-                    <div class="col-xs-6">
-                        <input type="text" name="email" placeholder="Email:">
-                    </div>
-                    <div class="col-xs-12">
-                        <textarea name="message" placeholder="Message..." rows="6"></textarea>
-                    </div>
-                    <div class="col-xs-12">
-                        <button type="submit">Send</button>
-                    </div>
-                    <div class="aside-footer col-xs-12">
-                        <p>© Copyright; Elzero Web School</p>
-                    </div>
-
-                </div>
-            </section>
-        </div>
-    </div>
-    <!--End the nav container-->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src='assets/js/jquery-ui.min.js'></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.fancybox.min.js"></script>
-    <script src="assets/js/isotope.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="assets/js/code.js"></script>
-
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQGIV_KSQj4DhdnW_xgdSryqbUXsAvW_M&callback=initMap&libraries=&v=weekly"
-        async></script>
-    <!--map script-->
-    <script>
-        let map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById("googleMap"), {
-                center: { lat: 31.2326678, lng: 29.9393604 },
-                zoom: 8,
-            });
-        }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQGIV_KSQj4DhdnW_xgdSryqbUXsAvW_M&callback=initMap">
-    </script>
-
-</body>
+        <!--End the nav container-->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src='assets/js/jquery-ui.min.js'></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.fancybox.min.js"></script>
+        <script src="assets/js/isotope.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="assets/js/code.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQGIV_KSQj4DhdnW_xgdSryqbUXsAvW_M&callback=initMap&libraries=&v=weekly"
+                async></script>
+        <!--map script-->
+        <script>
+            let map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById("googleMap"), {
+                    center: { lat: 31.2326678, lng: 29.9393604 },
+                    zoom: 8,
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQGIV_KSQj4DhdnW_xgdSryqbUXsAvW_M&callback=initMap">
+                </script>
+    </body>
 
 </html>
